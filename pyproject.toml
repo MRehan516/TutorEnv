@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tutorenv"
+version = "1.0.0"
+description = "An educational environment where an AI agent learns to tutor students."
+authors = [{name = "Mohd Rehan Arvi"}]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "openai",
+    "python-dotenv",
+    "httpx",
+    "openenv-core>=0.2.0"
+]
+
+[project.scripts]
+server = "server.app:main"

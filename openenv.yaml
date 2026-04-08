@@ -1,0 +1,9 @@
+name: tutorenv
+version: "1.0.0"
+description: "An educational environment where an AI agent learns to tutor students by correcting deeply held misconceptions. Reward is based on measured learning gain."
+author: "Mohd Rehan Arvi"
+entrypoint: "uvicorn app:app --host 0.0.0.0 --port 8000"
+tasks:
+  - "easy_vaccine_misconception"
+  - "medium_compound_interest"
+  - "hard_evolution_misconception"
