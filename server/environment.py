@@ -53,7 +53,7 @@ class TutorEnvironment:
         # Calculate rewards normally to keep state moving
         reward = 0.1
         self.total_reward += reward
-        self.student.knowledge_level = min(1.0, self.student.knowledge_level + reward)
+        self.student.knowledge_level = min(0.999, self.student.knowledge_level + reward)
 
         done = self.current_step >= self.max_steps
 
